@@ -13,7 +13,7 @@ public class SessionController {
 
     @RequestMapping(path = "/session", produces = "application/xml")
     public List<User> getSession() {
-        List<User> users = new ArrayList<User>();
+        List<User> users = new ArrayList<>();
         users.add(new User("1", "John Doe", "john.doe@example.com"));
         users.add(new User("2", "Jane Doe", "jane.doe@example.com"));
         return users;
