@@ -1,6 +1,6 @@
 package com.spring.session.demo.controllers;
 
-
+@Deprecated
 public class Main {
     public static void main(String[] args) {
         add(23,55,76);
