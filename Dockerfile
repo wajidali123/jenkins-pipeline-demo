@@ -1,5 +1,5 @@
 FROM openjdk:17-jdk-slim
-LABEL authors="etisalat"
+LABEL authors="wajidali"
 
 WORKDIR /app
 
