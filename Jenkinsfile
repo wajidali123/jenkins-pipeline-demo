@@ -20,7 +20,7 @@ pipeline {
 
         stage('Sonar Analysis') {
                 steps {
-                    sh "${SCANNER_HOME}/bin/Sonar-Scanner -Dsonar.java.binaries=target/classes -Dsonar.host.url=http://172.22.75.224:9000/ -Dsonar.login=${SUNAR_QUBE_TOKEN} -Dsonar.projectName=to-do-app -Dsonar.projectKey=to-do-app -Dsonar.sources=."
+                    sh "${SCANNER_HOME}/bin/Sonar-Scanner -Dsonar.java.binaries=target/classes -Dsonar.host.url=${SONAR_QUBE_SERVER} -Dsonar.login=${SUNAR_QUBE_TOKEN} -Dsonar.projectName=to-do-app -Dsonar.projectKey=to-do-app -Dsonar.sources=."
                 }
             }
 
